@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-vietnam: "Be Vietnam Pro", sans-serif;
+  --font-epilogue: "Epilogue", sans-serif;
+
+  --color-primary: #1f3984;
+  --color-text: #181f1c;
+  --color-desc: #919191;
+  --color-muted: #babcbb;
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+
+  .hover-gradient {
+    @apply transition-all duration-300 ease-out;
+  }
+  .hover-gradient:hover {
+    @apply shadow-md scale-[1.02] bg-gradient-to-r from-primary to-purple-600;
+  }
+
+  .hover-scale {
+    @apply transition-all duration-300 ease-out;
+  }
+  .hover-scale:hover {
+    @apply scale-[1.02];
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
