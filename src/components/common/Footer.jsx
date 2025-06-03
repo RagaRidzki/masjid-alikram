@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
       </motion.footer>
       <div className="font-vietnam bg-white text-center text-primary text-md font-medium py-4">
-        Copyright © 2025 - SMK Wikrama Bogor. All Right Reserved.
+        Copyright © 2025 - Raga Ridzki Panuntun. All Right Reserved.
       </div>
     </>
   );
